@@ -1,0 +1,42 @@
+﻿@using progettoSettimanale_mvc2_backend.Models
+@{
+    ViewBag.Title = "AllPrenotazioni";
+}
+
+<h2>Prenotazioni</h2>
+<table>
+    <thead>
+        <tr>
+            Numero Camera
+        </tr>
+        <tr>
+            CheckIn
+        </tr>
+        <tr>
+            CheckOut
+        </tr>
+        <tr>
+            Lista Servizi
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (Prenotazione p in Model)
+        {
+            <tr>
+                @p.IdCamera
+            </tr>
+            <tr>
+                @p.CheckIn
+
+            </tr>
+            <tr>
+                @p.CheckOut
+            </tr>
+            <tr>
+                <a href="~/Admin/GetServizi/@p.IdPrenotazione">Lista Servizi</a>
+            </tr>
+        }
+    </tbody>
+</table>
+

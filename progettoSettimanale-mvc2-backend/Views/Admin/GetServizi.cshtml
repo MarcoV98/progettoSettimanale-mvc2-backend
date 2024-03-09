@@ -1,0 +1,53 @@
+﻿﻿@using progettoSettimanale_mvc2_backend.Models
+@{
+    ViewBag.Title = "GetServizi";
+}
+
+<h2>Servizi</h2>
+<table>
+    <thead>
+        <tr>
+            Culla in Camera
+        </tr>
+        <tr>
+            Food Bar
+        </tr>
+        <tr>
+            Letto Aggiuntivo
+        </tr>
+        <tr>
+            Colazione in Camera
+        </tr>
+        <tr>
+            Prezzo
+        </tr>
+        <tr>
+            Quantita
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (Servizi s in Model)
+        {
+            <tr>
+                @s.CullaCamera
+            </tr>
+            <tr>
+                @s.FoodBar
+
+            </tr>
+            <tr>
+                @s.LettoAggiuntivo
+            </tr>
+            <tr>
+                @s.ColazioneInCamera
+            </tr>
+            <tr>
+                @s.Prezzo
+            </tr>
+            <tr>
+                @s.Quantita
+            </tr>
+        }
+    </tbody>
+</table>

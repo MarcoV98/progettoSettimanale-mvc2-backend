@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Clienti Aggiunti</h2>
+
+<div class="row row-cols-2">
+    <div class="col d-flex flex-column">
+        @Html.ActionLink("Aggiungi Camera", "AddCamera", "Admin", new { area = "" }, new { @class = "btn btn-primary text-warning my-2" })
+        @Html.ActionLink("Aggiungi Cliente", "AddCliente", "Admin", new { area = "" }, new { @class = "btn btn-primary text-warning my-2" })
+
+        @Html.ActionLink("Aggiungi Prenotazione", "AddPrenotazione", "Admin", new { area = "" }, new { @class = "btn btn-primary text-warning my-2" })
+
+
+
+        @Html.ActionLink("Aggiungi Sevizi", "AddServizi", "Admin", new { area = "" }, new { @class = "btn btn-primary text-warning my-2" })
+        @Html.ActionLink("Aggiungi Dettagli", "AddDettagli", "Admin", new { area = "" }, new { @class = "btn btn-primary text-warning my-2" })
+    </div>
+
+</div>
